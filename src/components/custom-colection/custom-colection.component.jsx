@@ -1,4 +1,4 @@
-import './custom-colection.style.scss';
+// import './custom-colection.style.scss';
 
 const CustomColection = () => {
     return (
