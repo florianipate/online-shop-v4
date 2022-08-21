@@ -3,7 +3,7 @@
 const CustomColection = () => {
     return (
         <div className='section-grid'>
-            <div className="section-wrapper-grid lg-col-8">
+            {/* <div className="section-wrapper-grid lg-col-8">
                 <div className="card-grid-main">
                     
                         <img src='images/Grid_Desktop_2.jpg' alt='images'/>
@@ -44,7 +44,8 @@ const CustomColection = () => {
                     </div>
                 </div>
             </div>
-            
+             */}
+             
         </div>
     );
 }

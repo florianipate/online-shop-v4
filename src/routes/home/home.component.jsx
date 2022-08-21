@@ -4,8 +4,8 @@ const Home = () =>{
   return (
     <div>
         <Outlet />
+        <h1>Home Page</h1>
         <CustomColection />
-        <div>End section</div>
     </div>
   );
 }
