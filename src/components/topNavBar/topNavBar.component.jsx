@@ -1,24 +1,24 @@
-import { Link } from "react-router-dom";
+import { NavLinksContainer, NavLink } from './topNavBar.style';
 
 const TopNavContainer = () => {
     return (
-        <div className="nav-link-container">
-            <Link className="nav-link" to = '/newin'>
+        <NavLinksContainer>
+            <NavLink to = '/newin'>
                 LINK 1
-            </Link>
-            <Link className="nav-link" to = '/newin'>
+            </NavLink>
+            <NavLink to = '/newin'>
                 LINK 2
-            </Link>
-            <Link className="nav-link" to = '/newin'>
+            </NavLink>
+            <NavLink to = '/newin'>
                 LINK 3
-            </Link>
-            <Link className="nav-link" to = '/newin'>
+            </NavLink>
+            <NavLink to = '/newin'>
                 LINK 4
-            </Link>
-            <Link className="nav-link" to = '/newin'>
+            </NavLink>
+            <NavLink to = '/newin'>
                 LINK 5
-            </Link>
-        </div>
+            </NavLink>           
+        </NavLinksContainer>
     );
 };
 export default TopNavContainer;
