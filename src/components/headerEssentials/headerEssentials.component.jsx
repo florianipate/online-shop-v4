@@ -1,6 +1,6 @@
-import { NavigationContainer, 
-    TopEsentials, 
-    LinksContainer, 
+import { useState, } from 'react';
+import SignInModal from '../signInModal/signInModal.component';
+import { LinksContainer, 
     LinkItem, 
     DropdownArrow, 
     DropdownMenu,
@@ -9,6 +9,10 @@ import { NavigationContainer,
 
 
 const HeaderEssentials = () =>{
+    const [showModal, setShowModal] = useState(false);
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    }
     return(
         <LinksContainer>
         <LinkItem>
@@ -24,12 +28,13 @@ const HeaderEssentials = () =>{
             Account
             <DropdownArrow className="down-arrow"/>
             <DropdownMenu>
-                <DropdownLink>
+                <DropdownLink onClick={openModal}>
                     Log in
                 </DropdownLink>
                 <DropdownLink>
                     Sign up
                 </DropdownLink>
+                <SignInModal showModal={showModal} setShowModal = {setShowModal}/>
             </DropdownMenu>
         </LinkItem>
     </LinksContainer>
