@@ -25,6 +25,7 @@ export const LinksContainer = styled.ul`
 
 export const LinkItem = styled.li`
     display: flex;
+    cursor:pointer;
     align-items: center;;
     // min-width: 100px;
     border-block-end-style: none;

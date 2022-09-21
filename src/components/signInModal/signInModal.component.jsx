@@ -1,9 +1,15 @@
 import { useEffect, useRef, useCallback } from 'react';
+import { signInWithGooglePopup } from '../utils/firebase/firebase.utils';
 import { useSpring, animated } from 'react-spring';
 import { Background, CloseModalButton, ModalWrapper } from "./signInModal.style";
 // import { MdClose } from 'react-icons/md';
 
 const SignInModal = ({showModal, setShowModal}) =>{
+    const logGoogleUser = async () => {
+        const response = await signInWithGooglePopup();
+        console.log(response);
+    }
+
     const modalRef = useRef();
     const animation = useSpring({
         config: {
@@ -25,6 +31,9 @@ const SignInModal = ({showModal, setShowModal}) =>{
             <animated.div style={animation}>
             <ModalWrapper>
                 Modal
+                <button onClick={logGoogleUser}>
+                    SIGN IN WITH GOOGLE 
+                </button>
                 <CloseModalButton aria-label="Close Modal" onClick={() => setShowModal(prev => !prev)} />
             </ModalWrapper>
             </animated.div>
