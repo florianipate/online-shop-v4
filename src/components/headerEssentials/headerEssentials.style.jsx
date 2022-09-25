@@ -52,6 +52,7 @@ export const DropdownArrow = styled.b`
     border-left: 4px solid transparent;`
 export const DropdownMenu = styled.ul`
     //display: none;
+    list-style: none
     `
 export const DropdownLink = styled.li`
 cursor:pointer;
