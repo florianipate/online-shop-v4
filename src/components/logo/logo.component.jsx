@@ -3,7 +3,7 @@ import { LogoWrapper } from "./logo.style";
 const Logo = () =>{
     return (
         <LogoWrapper to = '/'>
-            <h3>Logo</h3>
+            <h3>Logo Here</h3>
         </LogoWrapper>
         
     )
