@@ -39,8 +39,6 @@ export const LinkItem = styled.li`
         display: inline-block;
         margin-right: 6px;
     }`
-
-    
 export const DropdownArrow = styled.b`
     // margin-top:-3px;
     display: flex;
