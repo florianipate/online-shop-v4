@@ -21,8 +21,9 @@ export const TopEsentials = styled.div`
 export const LinksContainer = styled.ul`
     display:flex;
     margin:0;
-    justify-content: flex-end;`
-
+    justify-content: flex-end;
+    background-color:#ffffff;`
+    
 export const LinkItem = styled.li`
     display: flex;
     cursor:pointer;
@@ -51,10 +52,10 @@ export const DropdownArrow = styled.b`
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;`
 export const DropdownMenu = styled.ul`
-    //display: none;
+    display: none;
     list-style: none
     `
 export const DropdownLink = styled.li`
-cursor:pointer;
-`
+    cursor:pointer;
+    `
     

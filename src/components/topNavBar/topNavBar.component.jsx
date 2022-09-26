@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLinksContainer, NavLink, TopNavWrapper, MenuButton } from './topNavBar.style';
-import { MenuItems } from './menuItems.component';
+import { MenuItems } from '../headerEssentials/menuItems.component';
+import './test.css';
 import Logo from '../logo/logo.component';
 const TopNavContainer = () => {
     const [state, setState] = useState(false);
@@ -29,11 +30,11 @@ const TopNavContainer = () => {
                 }
             </MenuButton>
 
-            <Logo />
-            <NavLinksContainer>
+            {/* <Logo /> */}
+            <NavLinksContainer className={state ? 'active' : 'hide'}>
                 {MenuItems.map((item, index) => {
                     return (
-                        <NavLink key={index} to={item.url}>{item.tille}</NavLink>
+                        <NavLink onClick ={handleClick} key={index} to={item.url}>{item.tille}</NavLink>
                     )
                 })}       
             </NavLinksContainer>

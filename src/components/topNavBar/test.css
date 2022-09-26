@@ -1,0 +1,8 @@
+.hide{
+    transform: translateY(-100%) !important;
+    height:0px !important;
+  }
+  .active{
+    transform: translateY(0) !important;
+    height: 100% !important;
+  }
